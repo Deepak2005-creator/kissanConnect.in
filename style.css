@@ -1,0 +1,241 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #f1eeee;
+}
+
+header {
+    background-color: #60d42a;
+    padding: 20px;
+    color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background-color: #97f379;
+    text-align: center;
+    padding: 50px;
+    color: rgb(11, 11, 11);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #fe0000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.services, .experts, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-box, .expert-card {
+    background-color: rgb(194, 189, 189);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(107, 105, 105, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover, .expert-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-box h3, .expert-card h3 {
+    font-size: 1.6rem;
+    color: #050505;
+    margin-bottom: 10px;
+}
+
+.service-box p, .expert-card p {
+    font-size: 1rem;
+    color: #1c1c1c;
+}
+
+.expert-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.expert-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.expert-card a{
+    text-decoration: none;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f00000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #de3838;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #424141;
+    
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #f90404;
+    color: rgb(250, 245, 245);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f7f2;
+    color: black;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-card {
+    background-color: rgb(4, 4, 4);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(19, 19, 19, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.6rem;
+    color: #fcf4f4;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #e4dede;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #5c9e3e;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #f00000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #e44424;
+}

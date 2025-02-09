@@ -1,0 +1,156 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c7c5c58e;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(farmer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Inherit the background image from the body */
+    background-size: cover;
+    background-position: inherit;
+    background-attachment: inherit;
+    filter: blur(10px); /* Apply the blur effect */
+    z-index: -1; /* Places the blurred background behind the content */
+}
+
+/* Profile Container */
+.profile-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-top: 0;
+    background-color: #535151aa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(72, 70, 70, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    color: #0e0e0e;
+    margin-top: 15px;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+    color: #101010;
+    margin-top: 10px;
+}
+
+.profile-header:hover .profile-img {
+    transform: scale(1.1); /* Image zoom effect */
+}
+
+/* Skills Section */
+.skills {
+    margin-bottom: 40px;
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    color: #0f0f0f;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-out;
+    color: rgb(6, 6, 6);
+}
+
+.experience p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #0a0a0a;
+}
+
+/* Contact Section */
+.contact h2 {
+    font-size: 1.8rem;
+    color: #0a0a0a;
+    margin-bottom: 15px;
+    animation: fadeIn 2.5s ease-out;
+}
+.contact p{
+    color: rgb(14, 14, 14);
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: rgb(246, 241, 241);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Button hover effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
